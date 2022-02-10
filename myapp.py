@@ -17,8 +17,8 @@ T_T = 80
 
 def evaluate_model(P_PRL_S = 2, P_PRL_K= 3, D_P_SRL_K = -1, f_WK=0.2 ):
     D_P_SRL_O = f_WK *D_P_SRL_K
-    p_prl_n.index.rename(['Y','KW'], inplace=True)
-    p_prl_t.index.rename(['Y','KW'], inplace=True)
+   # p_prl_n.index.rename(['Y','KW'], inplace=True)
+   # p_prl_t.index.rename(['Y','KW'], inplace=True)
 
     df_results= pd.DataFrame()
     df_results['Einnahmen_S']=T_W * P_PRL_S * p_prl_w.reset_index(drop=True).Preis
