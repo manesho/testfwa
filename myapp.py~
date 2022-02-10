@@ -50,9 +50,9 @@ def evaluate_model(P_PRL_S = 2, P_PRL_K= 3, D_P_SRL_K = -1, f_WK=0.2 ):
  
  
 
-P_PRL_S = st.slider('P_PRL_S', 0.,5.,2., step = 0.1)
-P_PRL_K = st.slider('P_PRL_K', P_PRL_S,5.,3., step = 0.1 )
-f_WK = st.slider('Szenario Opt2 : f_WK',0.,1.,0.2, step =0.01 )
+P_PRL_S = st.sidebar.slider('P_PRL_S', 0.,5.,2., step = 0.1)
+P_PRL_K = st.sidebar.slider('P_PRL_K', P_PRL_S,5.,3., step = 0.1 )
+f_WK = st.sidebar.slider('Szenario Opt2 : f_WK',0.,1.,0.2, step =0.01 )
 
 results = evaluate_model(P_PRL_S = P_PRL_S, P_PRL_K = P_PRL_K , D_P_SRL_K = - (P_PRL_K-P_PRL_S))
 st.plotly_chart(results['Figure'])

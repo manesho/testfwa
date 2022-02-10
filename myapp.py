@@ -3,10 +3,10 @@ import streamlit as st
 import numpy as np
 import plotly.express as px
 
-p_prl_n = pd.read_pickle('p_prl_n.pkl')
-p_prl_t = pd.read_pickle('p_prl_t.pkl')
-p_prl_w = pd.read_pickle('p_prl_w.pkl')
-p_srl = pd.read_pickle('p_srl.pkl')
+p_prl_n = pd.read_csv('p_prl_n.csv')
+p_prl_t = pd.read_csv('p_prl_t.csv')
+p_prl_w = pd.read_csv('p_prl_w.csv')
+p_srl = pd.read_csv('p_srl.csv')
 
 T_W = 168
 T_N = 88
